@@ -29,7 +29,7 @@
         header {
             display: flex;
             justify-content: space-between;
-            background-color: #8543a2;
+            background-color: #0e1d3c;
             align-items: center;
             height: 100px;
         }
@@ -52,7 +52,7 @@
             color: white;
         }
 
-     
+
 
         .nav-menu {
             display: none;
@@ -62,7 +62,7 @@
 
 
 
-        main{
+        main {
             display: flex;
             height: calc(100vh-100px);
             justify-content: space-between;
@@ -70,12 +70,12 @@
         }
 
         .container-left {
-            flex-basis: 40%;
             position: relative;
-            margin: 100px;
+            margin: 50px;
         }
 
-       
+
+
         .container-right {
             display: flex;
             position: relative;
@@ -95,13 +95,13 @@
         .container-left h1 {
             color: rgba(26, 26, 170, 0.925);
             font-size: 62px;
-            padding: 0 0 5px 5px;
+            padding: 0 5px 0 5px;
             font-weight: bold;
         }
 
         .container-left h2 {
             color: rgba(7, 7, 206, 0.753);
-            padding: 0 0 0 5px;
+            padding: 0 5px 0 5px;
             /* font-size: 30px; */
         }
 
@@ -109,7 +109,7 @@
             color: rgb(2, 2, 80);
             line-height: 25px;
             margin: 30px 0;
-            padding: 0 0 0 5px;
+            padding: 0 5px 0 5px;
             font-weight: 300;
             font-size: 16px;
 
@@ -131,7 +131,98 @@
             background-color: var(--secondary-color)
         }
 
+        .container-main {
+            position: relative;
+            margin: 50px;
+        }
+
+        .container-main h1 {
+            color: rgba(26, 26, 170, 0.925);
+            font-size: 62px;
+            padding: 0 5px 0 5px;
+            font-weight: bold;
+        }
+
+        .container-main p {
+            color: rgb(2, 2, 80);
+            line-height: 25px;
+            margin: 30px 0;
+            padding: 0 5px 0 5px;
+            font-weight: 300;
+            font-size: 16px;
+        }
+
+        .name img {
+            width: 56%;
+            padding: 10px 0;
+            line-height: 25px;
+            margin: 30px 0;
+
+        }
+
+        .name h1 {
+            padding: 10px 0;
+        }
+
+        .bottom {
+            background-color: #0e1d3c;
+            color: white;
+            height: 5vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* position: absolute; */
+            bottom: 0;
+            width: 100%;
+        }
+
+        .new-heading {
+            /* margin: 30px; */
+            position: relative;
+        }
+
+        .new-heading h1 {
+            padding: 10px 0;
+        }
+
+        table {
+            width: 60%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            padding: 0 5px 0 5px;
+
+            line-height: 25px;
+            margin: 30px 0;
+        }
+
+        .table-p {
+            text-align: center;
+
+        }
+
+
+        tbody {
+            border: 1px solid black;
+        }
+
+        th {
+            justify-content: center;
+        }
+
+        tr {
+            justify-content: center;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+
+        }
+
         @media screen and (max-width:700px) {
+
+
             nav {
                 display: none;
             }
@@ -152,6 +243,7 @@
             main {
                 flex-direction: column-reverse;
                 margin: 50px 0;
+                /* height: 100vh; */
             }
 
             .container-right {
@@ -159,10 +251,13 @@
                 margin: 50px;
                 justify-content: center;
                 align-items: center;
+                /* background-size: contain;
+                background-repeat: no-repeat; */
             }
 
-            .container-right img {
+            .container-right .section-1 img {
                 width: 100%;
+                /* padding-top: 100px; */
                 justify-content: center;
                 align-items: center;
 
@@ -172,11 +267,10 @@
                 transform: translateX(70px);
             } */
             .container-left {
-                flex-basis: 100%;
-                justify-content: center;
-                align-items: center;
-
+                position: relative;
+                margin: 50px;
             }
+
 
             .container-left h2 {
                 font-size: 35px;
@@ -184,10 +278,93 @@
 
             .container-left p {
                 margin: 15px 0;
+            }
+
+            .container-main {
+                justify-content: center;
+                align-items: center;
+            }
+
+            iframe {
+                width: 100%;
+                height: ;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0;
+            }
+
+            .name h1 {
+                padding: 10px 0;
+            }
+
+            .name img {
+                width: 100%;
+                padding: 10px 0;
+
+            }
+
+
+            .bottom {
+                background-color: #0e1d3c;
+                color: white;
+                height: 5vh;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
+
+            table {
+                width: 100%;
+                table-layout: fixed;
+                border-collapse: collapse;
+                /* box-sizing: border-box; */
+                padding: 0 5px 0 5px;
+                
+                line-height: 25px;
+                margin: 30px 0;
+            }
+
+
+            .table-p {
+                text-align: center;
+                
+
+            }
+
+
+            tbody {
+                border: 1px solid black;
+            }
+
+            th {
+                justify-content: center;
+            }
+
+            tr {
+                justify-content: center;
+            }
+
+            td {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+
             }
 
         }
+
+
+
         @media screen and (max-width:400px) {
+
+
             nav {
                 display: none;
             }
@@ -208,6 +385,7 @@
             main {
                 flex-direction: column-reverse;
                 margin: 50px 0;
+                height: 100vh;
             }
 
             .container-right {
@@ -218,7 +396,7 @@
             }
 
             .container-right img {
-                width: 100%;
+                width: 70%;
                 justify-content: center;
                 align-items: center;
 
@@ -235,16 +413,82 @@
             }
 
             .container-left h2 {
-                justify-content: center;
-                align-items: center;
                 font-size: 35px;
             }
 
             .container-left p {
-                justify-content: center;
-                align-items: center;
                 margin: 15px 0;
             }
+
+            .container-main {
+                justify-content: center;
+                align-items: center;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .name img {
+                width: 100%;
+
+            }
+
+            .bottom {
+                background-color: #0e1d3c;
+                color: white;
+                height: 5vh;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
+
+            table {
+                width: 100%;
+                table-layout: fixed;
+                border-collapse: collapse;
+                padding: 0 5px 0 5px;
+
+                line-height: 25px;
+                margin: 30px 0;
+            }
+
+
+            .table-p {
+                text-align: center;
+
+            }
+
+
+            tbody {
+                border: 1px solid black;
+            }
+
+            th {
+                justify-content: center;
+            }
+
+            tr {
+                justify-content: center;
+            }
+
+            td {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+
+            }
+
         }
     </style>
 </head>
@@ -268,7 +512,7 @@
         </div>
     </header>
     <main>
-        <section class="container-left">
+        <div class="container-left">
             <h1>Beluga</h1>
             <h2>Description</h2>
             <p>Beluga lives at #123 Freddy Fazbear Pizza in Honolulu, Hawaii. </p>
@@ -277,12 +521,132 @@
                 times of day. </p>
             <p>While he is human, he turns into a polite cat in the middle of the night. </p>
             <button class="know-more">Know More</button>
-        </section>
-        <section class="container-right">
-            <img src="https://i.pinimg.com/736x/d1/7c/c7/d17cc7bf0e13fcdf975dd682d5df792f.jpg" alt="">
+        </div>
 
-        </section>
+        <div class="container-right">
+            <div class="section-1">
+
+                <img src="https://i.pinimg.com/736x/d1/7c/c7/d17cc7bf0e13fcdf975dd682d5df792f.jpg" alt="">
+            </div>
+
+
+        </div>
     </main>
+    <div class="container-main">
+        <h1>Beluga Face Reveal</h1>
+        <p>The American YouTube channel named Beluga provides Discord Skits, while his other channel, Beluga Jr.,
+            features memes and shorts. On his channel Beluga, he primarily posts short Discord-related or speed-runs
+            meme videos. Despite the fact that it is his second channel, it has quickly surpassed his Lucid Dreaming
+            channel in terms of popularity in late June 2021 due to the nature of the content. The channel Beluga was
+            started in January 27, 2017. Right now he is having about 4 million subscribers. Recently 4 weeks ago he
+            posted a video on his YouTube channel with the title Beluga Face Reveal. You can watch the Beluga Face
+            Reveal video below.</p>
+        <div class="url">
+
+            <iframe width="785" height="441" src="https://www.youtube.com/embed/8uBbBL738yU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </div>
+        <br>
+        <div class="name">
+            <h1>Beluga Real Name</h1>
+            <img src="https://img.fresherslive.com/latestnews/images/opt-images/width-500/2021/10/20/beluga-616fd6da61453-1634719450.webp"
+                alt="">
+            <p>Image Source: Youtube
+                <br><br>
+                Beluga is the name of a popular YouTube channel who has hit 4 million subscribers. But still the real
+                owner of this channel is unknown. Recently there was a Beluga Face Reveal in which he revealed Beluga
+                Real Name. The Beluga Real Name is Aretz.
+            </p>
+            <h1>Beluga Age Youtuber</h1>
+            <p class="age">Though Beluga face reveal was made 4 weeks ago it was only his face reveal. He hasn’t given
+                any information like Beluga Age Youtuber or How Old Is Beluga. In order to know such info keep checking
+                this article. Once Beluga Youtube Age is revealed it will be updated on this page.</p>
+            <h1>Beluga Net Worth</h1>
+            <p class="net-worth">As Beluga is a YouTube channel with more than a million subscribers and has millions of
+                views, obviously he must be a rich guy in America. But the actual number of Beluga Net Worth haven’t
+                been revealed in the Beluga Face Reveal video. Check this article frequently to get quick updates on
+                Beluga Net Worth.</p>
+        </div>
+        <div class="new-heading">
+
+            <h1>Beluga Wiki</h1>
+        </div>
+        <div class="table">
+            <table cellspacing="0">
+                <tbody>
+
+                    <tr>
+                        <td colspan="2">
+                            <p class="table-p">Beluga</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Profile</td>
+                        <td>Beluga</td>
+                    </tr>
+                    <tr>
+                        <td>Style</td>
+                        <td>Comedy and skits</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Date joined</td>
+                        <td>January 26,2017</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Twitter</td>
+                        <td>&commat;beluga1000</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Instagram</td>
+                        <td>&commat;beluga1000</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Other Media</td>
+                        <td>Discord server</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Videos</td>
+                        <td>62+</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Schedule</td>
+                        <td>4 video a week</td>
+                    </tr>
+
+                    <tr>
+                        <td>Stats</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>subscribers</td>
+                        <td>4 millions</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="bottom">
+            &copy Copyright MSK Thapa. All rights reserved.
+        </div>
+    </footer>
 </body>
 
 </html>
