@@ -62,12 +62,6 @@
 
 
 
-        main {
-            display: flex;
-            height: calc(100vh-100px);
-            justify-content: space-between;
-
-        }
 
         .container-left {
             position: relative;
@@ -75,6 +69,12 @@
         }
 
 
+        main {
+            display: flex;
+            /* height: calc(100vh-100px); */
+            justify-content: space-between;
+
+        }
 
         .container-right {
             display: flex;
@@ -85,7 +85,7 @@
         }
 
 
-        .container-right img {
+        .container-right .section-1 img {
             width: 90%;
             justify-content: center;
             align-items: center;
@@ -1076,7 +1076,7 @@
 
             iframe {
                 width: 100%;
-                height: 100%;
+                height: 467.35px;
                 top: 0;
                 left: 0;
                 bottom: 0;
@@ -2316,26 +2316,29 @@
                 color: white;
             }
 
+
             main {
                 flex-direction: column-reverse;
-                margin: 244px 0 0 0;
+                margin: 585px 0 0 0;
                 height: 100vh;
             }
 
-            .section-1 {
-                flex-basis: 100%;
-                margin: 50px;
-                justify-content: center;
+            .container-right {
+                display: flex;
+                position: relative;
+                flex-basis: 50%;
                 align-items: center;
+
             }
+
 
             .container-right .section-1 img {
-                width: 100%;
-                /* padding-top: 100px; */
+                width: 90%;
                 justify-content: center;
                 align-items: center;
 
             }
+
 
             /* .bg-box{
                 transform: translateX(70px);
@@ -2704,8 +2707,9 @@
 
             main {
                 flex-direction: column-reverse;
-                margin: 244px 0 0 0;
+                margin: 585px 0 0 0;
                 height: 100vh;
+                position: relative;
             }
 
             .section-1 {
@@ -2748,7 +2752,7 @@
 
             iframe {
                 width: 100%;
-                height: 100%;
+                height: 420.5px;
                 top: 0;
                 left: 0;
                 bottom: 0;
